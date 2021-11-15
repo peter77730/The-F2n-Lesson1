@@ -1,0 +1,217 @@
+body {
+  background-color: $lightBgColor;
+  transition: 0.3s ease-in-out;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  @include phone {
+    justify-content: space-between;
+  }
+  .logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 11.1%;
+    padding-left: 50px;
+    @include pad {
+      width: 20.5%;
+    }
+    @include padToPhone {
+      width: 31%;
+    }
+    @include phone {
+      padding-left: 20px;
+    }
+    img {
+      width: 26px;
+      height: 50px;
+    }
+    ul {
+      flex-direction: column;
+      .TaiwanE {
+        font-size: 9px;
+        font-family: $fontE;
+        color: $darkPrimaryColor;
+        padding-left: 11px;
+        line-height: 12px;
+      }
+      .TaiwanC {
+        font-size: 20px;
+        font-family: $fontC;
+        color: $lightPrimaryColor;
+        padding-left: 10px;
+        line-height: 29px;
+      }
+    }
+  }
+  .navBar {
+    display: flex;
+    width: 22.7%;
+    @include pc {
+      display: none;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .travalGo {
+        padding-right: 47.5px;
+        a {
+          font-family: $fontC;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 500;
+          color: $lightPrimaryColor;
+        }
+      }
+      .foodGo {
+        padding-left: 47.5px;
+        a {
+          font-family: $fontC;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 500;
+          color: $lightPrimaryColor;
+        }
+      }
+    }
+  }
+  .search {
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    input::placeholder {
+      color: $darkPrimaryColor;
+      font-size: 16px;
+      line-height: 23px;
+      padding-left: 20px;
+      @include pad {
+        width: 65.5%;
+      }
+      @include phone {
+        position: relative;
+      }
+    }
+    .whereGo {
+      min-width: 270px;
+      height: 46px;
+      border: 1px solid $darkPrimaryColor;
+      border-radius: 16px;
+      color: $darkPrimaryColor;
+      font-size: 16px;
+      line-height: 23px;
+      text-align: center;
+      @include padToPhone {
+        display: none;
+        overflow: hidden;
+      }
+    }
+    a {
+      i {
+        color: $lightPrimaryColor;
+        width: 26px;
+        height: 26px;
+        padding-left: 10px;
+        @include phone {
+          position: absolute;
+          overflow: hidden;
+          right: 70px;
+          top: 37.5px;
+        }
+      }
+    }
+  }
+  .dayControl {
+    width: 8.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    @include pc {
+      display: none;
+      overflow: hidden;
+    }
+    img {
+      padding-left: 8px;
+      padding-right: 11px;
+    }
+    .control {
+      min-width: 39px;
+      height: 21px;
+      border-radius: 20px;
+      border: 1px solid $darkPrimaryColor;
+      background-color: $darkPrimaryColor;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      .changeLight {
+        button {
+          min-width: 17px;
+          height: 17px;
+          margin: 2px 2px;
+          position: absolute;
+          left: 0;
+          cursor: pointer;
+          background-color: $mapBgColor;
+          border: 1px solid $mapBgColor;
+          border-radius: 50%;
+          z-index: 10;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+  .lang {
+    width: 10.7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    @include pc {
+      display: none;
+    }
+    a {
+      img {
+        padding-right: 10px;
+      }
+    }
+    p {
+      font-size: 16px;
+      color: $lightPrimaryColor;
+      line-height: 23.17px;
+      padding-right: 50px;
+    }
+  }
+}
+
+.navbar-toggler {
+  display: none;
+  padding-right: 50px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  @include pc {
+    display: flex;
+  }
+  @include pad {
+    width: 12.5%;
+  }
+  @include phone {
+    // width: 26%;
+    justify-content: end;
+    padding-right: 20px;
+  }
+  img {
+    height: 24px;
+    width: 24px;
+    color: $lightPrimaryColor;
+  }
+}

@@ -1,0 +1,76 @@
+// 輪播
+.flexslider {
+  border: 0;
+  //   overflow: hidden;
+  .slides {
+    height: 546px;
+    overflow: hidden;
+    width: 90%;
+    border-radius: 56px;
+    li {
+      width: 90%;
+      position: relative;
+      img {
+        width: 72%;
+        border-radius: 56px;
+        height: 546px;
+        object-fit: cover;
+        object-position: center center;
+        margin: 0 auto;
+        @include pad {
+          border-radius: 24px;
+          height: 400px;
+        }
+      }
+      .flexSliderPic {
+        position: absolute;
+        bottom: 20%;
+        right: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include pad {
+          bottom: 15%;
+          right: 35%;
+        }
+        @include padToPhone {
+          bottom: 10%;
+          right: 30%;
+        }
+        .picName {
+          font-size: 36px;
+          font-weight: 700;
+          font-family: $fontC;
+          color: $lightBgColor;
+          @include pad {
+            font-size: 20px;
+          }
+          @include padToPhone {
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+        .picLink {
+          padding: 5px 10px;
+          height: 49px;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: $fontC;
+          color: $lightBgColor;
+          background-color: $textNameColor;
+          margin-left: 60px;
+          border-radius: 12px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+          @include padToPhone {
+            padding: 5px 5px;
+            font-size: 14px;
+            border-radius: 8px;
+            margin-left: 30px;
+            height: 36px;
+          }
+        }
+      }
+    }
+  }
+}

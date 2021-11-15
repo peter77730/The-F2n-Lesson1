@@ -1,0 +1,123 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .travalTitle {
+    width: 83.19%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      flex-direction: row;
+      //   margin-left: 121px;
+      li {
+        margin: 40px 8px;
+        font-size: 16px;
+        font-family: $fontC;
+        color: $textNameColor;
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          font-family: $fontC;
+          color: $textNameColor;
+        }
+      }
+    }
+  }
+  .travalSelect {
+    width: 83.19%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2px;
+    .travalSelectLeft {
+      h1 {
+        font-size: 26px;
+        font-weight: 700;
+        font-family: $fontC;
+        color: $lightPrimaryColor;
+      }
+    }
+    .travalSelectRightt {
+      align-items: center;
+      justify-content: center;
+      select {
+        width: 140px;
+        height: 42px;
+        border: 1px solid $otherColor;
+        border-radius: 16px;
+        font-size: 16px;
+        font-family: $fontC;
+        color: $lightPrimaryColor;
+        margin-left: 40px;
+        padding: 0 8px;
+      }
+    }
+  }
+}
+
+.travalSelectMain {
+  width: 83.19%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 40px 0;
+  .travalSelectMainRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 13.5px;
+    margin-bottom: 85px;
+    .topViewIn2 {
+      width: 270px;
+      height: 303px;
+      border-radius: 30px;
+      border: 1px solid $otherColor;
+      overflow: hidden;
+      a {
+        img {
+          width: 270px;
+          height: 213px;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $fontC;
+        color: $lightPrimaryColor;
+        padding: 10px;
+      }
+      h4 {
+        font-size: 16px;
+        font-family: $fontC;
+        color: $textNameColor;
+        padding: 10px;
+      }
+    }
+  }
+}
+.travalBtn {
+  button {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-family: $fontC;
+    background-color: $moveColor;
+    color: $lightPrimaryColor;
+    cursor: pointer;
+  }
+}

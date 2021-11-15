@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Peter Chen">
+    <meta name="robots" content="index,follow">
+        <link rel="shortcut icon" href="./pic/iconbluesmall.svg">
+        <link rel="bookmark" href="./pic/iconbluesmall.svg">
+    <title>島遊</title>
+    <!-- 輪播 -->
+    <link rel="stylesheet" href="./slider/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="./slider/jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider(
+          {touch:true,
+            animation:'slide',
+          }
+        );
+      });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/all.css">
+</head>
+<body>
+
+    <div class="header">
+		<!-- logo -->
+        <div class="logo">
+            <img src="./pic/iconbluebig.svg" alt="logo" class="TaiwanLogo">
+            <ul>
+                <li class="TaiwanE">Taiwan</li>
+                <li class="TaiwanC toggleTextNameC">島遊</li>
+            </ul>
+        </div>
+        <!-- 全部連結 -->
+        <div class="navBar">
+            <ul>
+                <li class="travalGo"><a href="##" class="toggleTextNameC">旅遊景點</a></li>
+                <li class="foodGo"><a href="##" class="toggleTextNameC">美食餐廳</a></li>
+            </ul>
+        </div>
+        <!-- searchBar -->
+        <div class="search">
+            <input type="text" placeholder="想去哪裡玩？" class="whereGo">
+            <a href="##"><i class="fas fa-search fa-2x toggleTextNameC"></i></a>
+        </div>
+        <!-- weight<1200顯示 -->
+        <div class="navbar-toggler">
+            <a href="##"><img src="./pic/navbar.svg" alt="navbar"></a>
+        </div>
+        <!-- 日夜轉換 -->
+        <div class="dayControl">
+            <img src="./pic/sun.svg" alt="sun">
+                <div class="control"><a href="##" class="changeLight">
+                    <button value="circle" class="circle"></button>
+                </div>
+            <img src="./pic/moon.svg" alt="moon">
+        </div>
+        <!-- 語系切換 -->
+        <div class="lang"><a href="##">
+            <a href="##"><img src="./pic/global.svg" alt="lang" class="langChange"></a>
+            <p id="langChange"class="toggleColor toggleTextNameC">中文</p>
+        </div>
+    </div>
+
+    <!-- page1 -->
+    <div class="page1">
+    <!-- 輪播 -->
+        <div class="flexslider">
+            <ul class="slides">
+      <!-- <li>
+        <img src="./pic/test.jpg" />
+        <div class="flexSliderPic">
+            <h1 class="picName">九份老街</h1>
+            <button class="picLink" type="button" value="" onclick="location.href='##'">新北</button>
+        </div>
+      </li>
+      <li>
+        <img src="./pic/test.jpg" />
+        <div class="flexSliderPic">
+            <h1 class="picName">九份老街</h1>
+            <button class="picLink" type="button" value="" onclick="location.href='##'">新北</button>
+      </li>
+      <li>
+        <img src="./pic/test.jpg" />
+        <div class="flexSliderPic">
+            <h1 class="picName">九份老街</h1>
+            <button class="picLink" type="button" value="" onclick="location.href='##'">新北</button>
+      </li>
+      <li>
+        <img src="./pic/test.jpg" />
+        <div class="flexSliderPic">
+            <h1 class="picName">九份老街</h1>
+            <button class="picLink" type="button" value="" onclick="location.href='##'">新北</button>
+      </li> -->
+            </ul>
+        </div>
+
+    <div class="mainBar">
+        <div class="mainBarSelect"><a class="mainBarLink toggleColor" href="##">熱鬧繁華</a></div>
+        <div class="mainBarSelect"><a class="mainBarLink toggleColor" href="##">與自然共舞</a></div>
+        <div class="mainBarSelect"><a class="mainBarLink toggleColor" href="##">純樸人情味</a></div>
+        <div class="mainBarSelect"><a class="mainBarLink toggleColor" href="##">南島奔放</a></div>
+    </div>
+
+        <!-- 城市選取區 -->
+    <div class="mainTop">
+        <div class="mainLeft">
+            <a href="##"><img src="./pic/left.svg" alt="leftMove"></a>
+        </div>
+        <div class="mainShow">
+    <!-- <div class="citySelect"><img src="./pic/test.jpg" alt="台北"><h2>台北</h2>
+        <a class="darkHidden" href="##"></a>
+    </div>
+    <div class="citySelect"><img src="./pic/test.jpg" alt="新北"><h2>新北</h2>
+        <a class="darkHidden" href="##"></a>
+    </div>
+    <div class="citySelect"><img src="./pic/test.jpg" alt="桃園"><h2>桃園</h2>      
+        <a class="darkHidden" href="##"></a>
+    </div>
+    <div class="citySelect"><img src="./pic/test.jpg" alt="台中"><h2>台中</h2>
+        <a class="darkHidden" href="##"></a>
+    </div>
+    <div class="citySelect"><img src="./pic/test.jpg" alt="台南"><h2>台南</h2>
+        <a class="darkHidden" href="##"></a>
+    </div>
+    <div class="citySelect"><img src="./pic/test.jpg" alt="高雄"><h2>高雄</h2>    
+        <a class="darkHidden" href="##"></a>
+    </div> -->
+        </div>
+        <div class="mainRight">
+            <a href="##">
+                <img src="./pic/right.svg" alt="rightMove">
+            </a>
+        </div>
+    </div>
+
+<!-- 熱門景點專區 -->
+    <div class="topView">
+        <div class="topViewTitle">
+            <h2 class="toggleTextNameC">熱門景點</h2>
+        </div>
+        <div class="topViewMove">
+            <a href="##"><img src="./pic/viewLeft.svg" alt=""></a>
+            <a href="##"><img src="./pic/viewRight.svg" alt=""></a>
+        </div>
+        <div class="topViewSelect">
+    <!-- <div class="topViewIn">
+        <a href="##"><img src="./pic/test.jpg" alt=""></a>
+        <h3 class="toggleColor">陽明山國家公園</h3>
+        <h4>台北</h4>
+    </div>
+    <div class="topViewIn">
+        <a href="##"><img src="./pic/test.jpg" alt=""></a>
+        <h3 class="toggleColor">陽明山國家公園</h3>
+        <h4>台北</h4>
+    </div>
+    <div class="topViewIn">
+        <a href="##"><img src="./pic/test.jpg" alt=""></a>
+        <h3 class="toggleColor">陽明山國家公園</h3>
+        <h4>台北</h4>
+    </div>
+    <div class="topViewIn">
+        <a href="##"><img src="./pic/test.jpg" alt=""></a>
+        <h3 class="toggleColor">陽明山國家公園</h3>
+        <h4>台北</h4>
+    </div> -->
+        </div>
+    </div>
+
+<!-- 人氣美食專區 -->
+    <div class="hitFoodArea">
+        <div class="hitFoodTitle">
+            <h2 class="toggleTextNameC">人氣美食</h2>
+        </div>
+        <div class="hitFood">
+    <!-- <div class="foodSelect"><img src="./pic/test.jpg" alt="中式美食"><h2>中式美食</h2>
+        <a class="darkHidden" href="##"></a>
+    </div>
+    <div class="foodSelect"><img src="./pic/test.jpg" alt="夜市小吃"><h2>夜市小吃</h2>
+        <a class="darkHidden" href="##"></a>
+    </div>
+    <div class="foodSelect"><img src="./pic/test.jpg" alt="異國料理"><h2>異國料理</h2>      
+        <a class="darkHidden" href="##"></a>
+    </div>
+    <div class="foodSelect"><img src="./pic/test.jpg" alt="甜點冰品"><h2>甜點冰品</h2>
+        <a class="darkHidden" href="##"></a>
+    </div>
+    <div class="foodSelect"><img src="./pic/test.jpg" alt="伴手禮"><h2>伴手禮</h2>
+        <a class="darkHidden" href="##"></a>
+    </div>
+    <div class="foodSelect"><img src="./pic/test.jpg" alt="全部類別"><h2>全部類別</h2>    
+        <a class="darkHidden" href="##"></a>
+    </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- page2 -->
+    <div class="page2 d-none">
+        <!-- main -->
+        <div class="container">
+            <div class="travalTitle">
+                <ul>
+                    <li><a href="##">首頁</a></li>
+                    <li>></li>
+                    <li><a href="##">旅遊景點</a></li>
+                    <li>></li>
+                    <li><a href="##">台北市</a></li>
+                    <li>></li>
+                    <li><a href="##">大坑</a></li>
+                </ul>
+            </div>
+
+            <div class="travalSelect">
+                <div class="travalSelectLeft">
+                    <h1>旅遊景點</h1>
+                </div>
+                <div class="travalSelectRightt">
+                    <select name="地區" id="areaSelect">
+                        <option value="">地區選擇</option>
+                        <option value="Taipei">台北市</option>
+                        <option value="NewTaipei">新北市</option>
+                        <option value="Taoyuan">桃園市</option>
+                        <option value="Taichung">台中市</option>
+                        <option value="Tainan">台南市</option>
+                        <option value="Kaohsiung">高雄市</option>
+                        <option value="Keelung">基隆市</option>
+                        <option value="Hsinchu">新竹市</option>
+                        <option value="HsinchuCounty">新竹縣</option>
+                        <option value="MiaoliCounty">苗栗縣</option>
+                        <option value="ChanghuaCounty">彰化縣</option>
+                        <option value="NantouCounty">南投縣</option>
+                        <option value="YunlinCounty">雲林縣</option>
+                        <option value="ChiayiCounty">嘉義縣</option>
+                        <option value="Chiayi">嘉義市</option>
+                        <option value="PingtungCounty">屏東縣</option>
+                        <option value="宜蘭縣">YilanCounty</option>
+                        <option value="HualienCounty">花蓮縣</option>
+                        <option value="TaitungCounty">台東縣</option>
+                        <option value="KinmenCounty">金門縣</option>
+                        <option value="PenghuCounty">澎湖縣</option>
+                        <option value="LienchiangCounty">連江縣</option>
+                    </select>
+                    <select name="活動">
+                        <option value="全部">全部</option>
+                        <option value="泡湯活動">泡湯活動</option>
+                    </select>
+                </div>                
+            </div>
+        </div>
+        <div class="travalSelectMain">
+            <div class="travalSelectMainLeft">
+
+            </div>
+            <div class="travalSelectMainRight">
+                <!-- <div class="topViewIn2">
+                    <a href="##"><img src="./pic/test.jpg" alt=""></a>
+                    <h3 class="toggleColor">陽明山國家公園</h3>
+                    <h4>台北</h4>
+                </div>
+                <div class="topViewIn2">
+                    <a href="##"><img src="./pic/test.jpg" alt=""></a>
+                    <h3 class="toggleColor">陽明山國家公園</h3>
+                    <h4>台北</h4>
+                </div>
+                <div class="topViewIn2">
+                    <a href="##"><img src="./pic/test.jpg" alt=""></a>
+                    <h3 class="toggleColor">陽明山國家公園</h3>
+                    <h4>台北</h4>
+                </div> -->
+            </div>
+            <div class="travalBtn d-none">
+                <button>更多景點</button>
+            </div>
+        </div>  
+    </div>
+
+    <!-- join me 加入我們 -->
+    <div class="joinMe">
+        <h2>訂閱我們，獲得最在地的旅遊資訊！</h2>
+        <p>每周六一封，不隨意打擾，且隨時可以取消</p>
+        <div class="mailInput">
+            <input type="email" placeholder="輸入你的 Email">
+            <button id="subscription">訂閱</button>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="leftLogo">
+            <img src="./pic/whiteTaiwan.svg" alt="logo">
+            <ul>
+                <li class="TaiwanE">Taiwan</li>
+                <li class="TaiwanC">島遊</li>
+            </ul>
+        </div>
+        <div class="aboutAll">
+            <div class="left">
+                <ul>
+                    <li>關於 Taiwan 島遊</li>
+                    <li><a href="##">我們是誰</li></a>
+                    <li><a href="##">加入我們</li></a>
+                    <li><a href="##">聯繫我們</li></a>
+                </ul>
+            </div>
+            <div class="center">
+                <ul>
+                    <li>服務條款</li>
+                    <li><a href="##">隱私權政策</li></a>
+                    <li><a href="##">FAQ</li></a>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>追蹤我們</li>
+                    <li><a href="##"><img src="./pic/facebook.svg" alt="Facebook">Facebook</li></a>
+                    <li><a href="##"><img src="./pic/Instagram.svg" alt="Instagram">Instagram</li></a>
+                    <li><a href="##"><img src="./pic/line.svg" alt="Line">Line</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 隱私權copyright -->
+    <div class="copyright">
+        <img src="./pic/copyright.svg" alt="copyright">
+        <p>Design by Zoe Kang</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
+    <script src="./all.js"></script>
+</body>
+</html>

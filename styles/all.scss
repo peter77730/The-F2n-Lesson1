@@ -1,0 +1,33 @@
+@import "reset";
+@import "variable";
+@import "mixin";
+@import "slideShow";
+@import "header";
+@import "main";
+@import "footer";
+@import "traval";
+
+// toggle 開始
+.toggleDark {
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+.togglemove {
+  transform: translateX(17px);
+  transition: 0.3s ease-in-out;
+}
+.toggleCangeColor {
+  background-color: $darkPrimaryColor;
+}
+.toggleOtherColor {
+  color: $otherColor !important;
+}
+.toggleTextNameColor {
+  color: $textNameColor !important;
+}
+// toggle 結束
+
+//分頁
+.d-none {
+  display: none;
+}

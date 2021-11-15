@@ -1,0 +1,204 @@
+//joinMe
+.joinMe {
+  width: 82%;
+  height: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: $moveColor;
+  margin: 0 auto;
+  margin-top: 185px;
+  margin-bottom: 100px;
+  @include padToPhone {
+    margin-top: 82px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: $fontC;
+    line-height: 2.5rem;
+    color: $lightPrimaryColor;
+  }
+  p {
+    font-family: $fontC;
+    font-size: 16px;
+    color: $lightBgColor;
+    line-height: 2.5em;
+  }
+  .mailInput {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    input {
+      min-width: 400px;
+      height: 50px;
+      border: 1px solid $darkPrimaryColor;
+      border-radius: 12px;
+      color: $darkPrimaryColor;
+      font-size: 16px;
+      text-align: center;
+      @include padToPhone {
+        min-width: 270px;
+        height: 40px;
+        margin-bottom: 5px;
+      }
+    }
+    button {
+      width: 60px;
+      height: 50px;
+      padding: 10.5px 10px;
+      margin-left: 14px;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: 500;
+      font-family: $fontC;
+      color: $lightBgColor;
+      background-color: $lightPrimaryColor;
+      border: 0;
+      cursor: pointer;
+      @include padToPhone {
+        width: 148px;
+        height: 40px;
+        padding: 0;
+      }
+    }
+    input::placeholder {
+      text-align: start;
+      color: $darkPrimaryColor;
+      font-size: 16px;
+      line-height: 23px;
+      padding-left: 20px;
+    }
+  }
+}
+
+// footer
+.footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightPrimaryColor;
+  height: 275px;
+  @include padToPhone {
+    height: 300px;
+  }
+  .leftLogo {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    @include padToPhone {
+      padding-left: 15px;
+    }
+    @include padToPhone {
+      width: 90%;
+    }
+    img {
+      width: 50.68px;
+      height: 98px;
+    }
+    ul {
+      flex-direction: column;
+      .TaiwanE {
+        font-size: 16px;
+        font-family: $fontE;
+        color: $darkPrimaryColor;
+        padding-left: 22px;
+      }
+      .TaiwanC {
+        font-size: 40px;
+        font-family: $fontC;
+        color: $lightBgColor;
+        padding-left: 18px;
+        padding-top: 8px;
+      }
+    }
+  }
+  .aboutAll {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 48%;
+    line-height: 23.17px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $lightBgColor;
+    @include padToPhone {
+      width: 90%;
+      font-size: 14px;
+    }
+    .left {
+      width: 200px;
+      ul {
+        font-family: $fontE;
+        li {
+          a {
+            color: $lightBgColor;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .center {
+      width: 150px;
+      ul {
+        font-family: $fontE;
+        li {
+          a {
+            color: $lightBgColor;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .right {
+      width: 150px;
+      ul {
+        font-family: $fontE;
+        li {
+          a {
+            font-size: 14px;
+            color: $lightBgColor;
+            text-decoration: none;
+            @include padToPhone {
+              font-size: 12px;
+            }
+            img {
+              padding: 0 8px;
+              @include padToPhone {
+                padding: 0 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//copyright
+.copyright {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px 0;
+  background-color: $lightPrimaryColor;
+  img {
+    width: 20px;
+    height: 20px;
+    padding: 0 20px;
+  }
+  p {
+    font-size: 14px;
+    font-family: $fontE;
+    color: $otherColor;
+  }
+}
